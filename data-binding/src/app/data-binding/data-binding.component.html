@@ -1,3 +1,70 @@
+<section class="propertu-binding">
+
+  <article>
+    <h3>Two way DataBinding</h3>
+
+    <div>
+
+      <input type="text" [(ngModel)]="nome">
+
+      <p>{{nome}}</p>
+    </div>
+
+
+    <div>
+
+      <input type="text" [(ngModel)]="pessoa.nome">
+      <input type="text" [(ngModel)]="pessoa.idade">
+
+      <p>{{pessoa.nome}} {{pessoa.idade}}</p>
+    </div>
+
+  </article>
+</section>
+
+
+
+<!--
+<section class="propertu-binding">
+
+  <article>
+    <h3>Event Binding</h3>
+
+    <div>
+
+      <button (click)="botaoClicado()"
+      class="btn btn-primary">Me clique</button>
+
+      <br><br>
+
+      <input type="text" 
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="salvar($event.target.value)"
+      (blur) = "salvar(campo.value)"
+      #campo
+       />
+      <p>Valor Atual: {{valorAtual}}</p>
+      <p>Valor Salvo: {{valorSalvo}}</p>
+
+      <br>
+
+      <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.teste]="isMouseOver"
+      >
+        Passe o mouse sobre mim</span>
+
+    </div>
+
+  </article>
+
+</section>
+-->
+
+
+<!--
+<br><br>
 <section class="propertu-binding">   
 
   <article> 
@@ -52,4 +119,4 @@
   </article>
 
 
-</section>
+</section>-->
