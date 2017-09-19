@@ -10,7 +10,7 @@ export class DataBindingComponent implements OnInit {
   valorAtual:string;
   valorSalvo:string;
   isMouseOver:boolean = false;
-
+  
   nome:string  = 'abc';
 
   pessoa:any = {
@@ -20,6 +20,11 @@ export class DataBindingComponent implements OnInit {
 
   url:string = 'http://google.com';
   urlImagem = 'http://lorempixel.com/400/200/nature/';
+
+
+  nomeCurso: string = 'Angular Curso';
+
+
 
   getValor(){
     return 1;
@@ -39,6 +44,11 @@ export class DataBindingComponent implements OnInit {
 
   onMouseOverOut(){
     this.isMouseOver = !this.isMouseOver;
+  }
+
+
+  onMudouValor(evento){
+    console.log(evento.novoValor);
   }
 
   constructor() { }

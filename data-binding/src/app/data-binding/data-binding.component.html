@@ -1,6 +1,21 @@
 <section class="propertu-binding">
 
   <article>
+    <h3>Input / Output Property</h3>
+    
+    <app-curso [nome]="nomeCurso"></app-curso>
+
+    <contador valor="10" (mudouValor)="onMudouValor($event)"></contador>
+
+  </article>
+</section>
+
+
+
+
+<!--<section class="propertu-binding">
+
+  <article>
     <h3>Two way DataBinding</h3>
 
     <div>
@@ -20,7 +35,7 @@
     </div>
 
   </article>
-</section>
+</section> -->
 
 
 
